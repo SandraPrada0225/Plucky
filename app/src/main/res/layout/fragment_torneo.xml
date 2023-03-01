@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.torneo.TorneoFragment">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/primerfondotorneo"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:lottie_autoPlay="true"
+                android:layout_marginTop="40dp"
+                app:lottie_fileName="estrellitas.json"
+                app:lottie_imageAssetsFolder="assets"
+                app:lottie_loop="true"
+                />
+
+
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/idGridTorneo"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginTop="10dp"
+                android:padding="4dp"
+                app:columnCount="3"
+                app:rowCount="1"
+
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardNivelTorneo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#1E3F6B"
+                    android:foreground="?selectableItemBackground"
+                    >
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/espada" />
+
+                        <TextView
+                            android:id="@+id/nivelTorneo"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="7dp"
+                            android:gravity="center"
+                            android:textColor="#DFE7F1"
+                            android:textSize="15sp" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardMonedasTorneo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#1E3F6B"
+                    android:foreground="?selectableItemBackground"
+
+                    >
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/rupia" />
+
+                        <TextView
+                            android:id="@+id/monedasTorneo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="#DFE7F1"
+                            android:textSize="15sp" />
+
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardGemasTorneo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#1E3F6B"
+                    android:foreground="?selectableItemBackground"
+
+                    >
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/zafiro" />
+
+                        <TextView
+                            android:id="@+id/gemasTorneo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="#DFE7F1"
+                            android:textSize="16sp" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.cardview.widget.CardView>
+            </androidx.gridlayout.widget.GridLayout>
+
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginBottom="12dp"
+                android:text="Torneo"
+                android:textColor="#DFE7F1"
+                android:textSize="30sp" />
+
+
+        </LinearLayout>
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewTorneos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="20dp"
+            android:scrollbars="none"
+            android:foregroundGravity="center_horizontal" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAgregarTorneo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+</FrameLayout>

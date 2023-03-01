@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoprincipal2"
+    tools:context=".Splash">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        >
+        <TextView
+            android:id="@+id/universidadDetalle"
+            android:text="'El mejor modo de predecir el futuro es inventandolo'"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        >
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="load.json"
+            app:lottie_imageAssetsFolder="assets"
+            app:lottie_loop="true" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#d65418"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="10dp"
+    android:elevation="2dp"
+    app:contentPadding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/clanes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/imagenCardClan"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/espada" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            >
+
+            <TextView
+                android:id="@+id/nombreCardClan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nombreJugador"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/IntegrantesCardClan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/correoJugador"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.cardview.widget.CardView>

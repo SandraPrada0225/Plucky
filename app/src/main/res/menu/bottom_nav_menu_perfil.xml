@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigationPerfil"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Perfil"
+        >
+        <shape android:shape="rectangle">
+            <corners
+                android:topLeftRadius="8dp"
+                android:bottomLeftRadius="8dp">
+            </corners>
+        </shape>
+
+    </item>
+    <item
+        android:id="@+id/navigationMensajes"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Mensajes"
+        />
+
+    <item
+
+        android:id="@+id/navigationSocial"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Social"
+        />
+
+
+
+</menu>

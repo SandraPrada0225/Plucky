@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigationTienda"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/titleT_Tienda"
+        />
+    <item
+        android:id="@+id/navigationEquipo"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_Equipo"
+        />
+
+    <item
+        android:id="@+id/navigationMundo"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_Mundo"
+        />
+    <item
+        android:id="@+id/navigationOnline"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_Online"
+        />
+    <item
+        android:id="@+id/navigationTorneo"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_Torneo"
+        />
+</menu>

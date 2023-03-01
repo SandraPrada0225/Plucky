@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/primerfondo"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="200dp"
+    tools:context=".ui.MenuPerfilJugador.MenuSocialFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/misAmigos"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="33dp"
+            android:layout_toStartOf="@+id/Notificaciones"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/friends" />
+
+        <ImageView
+            android:id="@+id/Notificaciones"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="33dp"
+            android:layout_toStartOf="@+id/buscarAmigos"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/friend" />
+
+        <ImageView
+            android:id="@+id/buscarAmigos"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="@dimen/appbar_padding"
+            android:layout_marginRight="83dp"
+            android:src="@drawable/campanita3" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/menusocial_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

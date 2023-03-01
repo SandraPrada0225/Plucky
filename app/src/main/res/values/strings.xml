@@ -1,0 +1,118 @@
+<resources>
+    <!--Actividad Main-->
+    <string name="app_name">Plucky</string>
+    <string name="login">Entra</string>
+    <string name="registro">Registrate</string>
+
+    <!-- Actividad Registro-->
+    <string name="correo">Correo</string>
+    <string name="clave">Clave</string>
+    <string name="nombre">Nombre</string>
+    <string name="universidad">Universidad</string>
+    <string name="semestre">Semestre</string>
+    <string name="fecha">Fecha</string>
+    <string name="registrar">Registrar</string>
+
+    <!-- Actividad Ingreso-->
+    <string name="correoRegistrado">Correo</string>
+    <string name="claveRegistrada">Clave</string>
+    <string name="ingreso">Ingresar</string>
+
+    <!-- Actividad Menu-->
+    <string name="cerrarSesion">Cerrar sesión</string>
+    <string name="nivel">--</string>
+    <string name="monedas">--</string>
+    <string name="cardGemas">--</string>
+    <string name="perfil">--</string>
+    <string name="amigos">Amigos</string>
+    <string name="mensajes">Mensajes</string>
+    <string name="online">OnLine</string>
+    <string name="offline">OffLine</string>
+    <string name="entrenamiento">Entrenamiento</string>
+
+
+    <string name="titleT_Tienda">Tienda</string>
+    <string name="title_Equipo">Equipo</string>
+    <string name="title_Mundo">Mundo</string>
+    <string name="title_Online">Online</string>
+    <string name="title_Torneo">Torneo</string>
+
+    <!-- Actividad escenario-->
+    <string name="tiempo">0S</string>
+
+    <!-- Perfil-->
+    <string name="nombrePerfil">Nombre</string>
+    <string name="correoPerfil">Correo</string>
+    <string name="universidadPerfil">Universidad</string>
+    <string name="semestrePerfil">Semestre</string>
+    <string name="fechaPerfil">Fecha</string>
+    <string name="salir">left</string>
+    <string name="editarPerfil">Editar</string>
+
+    <!-- EditarPerfil-->
+    <string name="nombreEditar">--</string>
+    <string name="correoEditar">--</string>
+    <string name="universidadEditar">--</string>
+    <string name="semestreEditar">--</string>
+    <string name="salirEditar">left</string>
+    <string name="editarSemestre">Edit</string>
+    <string name="editarUniversidad">Edit</string>
+    <string name="editarNombre">Edit</string>
+    <string name="editarImagen">Edit</string>
+
+    <!-- consultar jugadores-->
+    <string name="nombreJugador">Nombre</string>
+    <string name="correoJugador">Correo</string>
+    <string name="nivelJugador">Nivel</string>
+
+    <!-- Detalle Jugador-->
+    <string name="InformacionDetalle">Detalles Del Jugador</string>
+    <string name="nombreDetalle"></string>
+    <string name="correoDetalle"></string>
+    <string name="nivelDetalle"></string>
+    <string name="universidadDetalle">Universidad</string>
+    <string name="semestreDetalle">Semestre</string>
+
+    <string name="title_activity_contenerdor_menu">ContenerdorMenu</string>
+    <string name="tab_text_1">Tienda</string>
+    <string name="tab_text_2">Equipo</string>
+    <string name="tab_text_3">Mundo</string>
+    <string name="tab_text_4">Online</string>
+    <string name="tab_text_5">Torneos</string>
+    <string name="title_activity_contenedor_menu">ContenedorMenu</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_navegacion">MainActivity</string>
+    <string name="title_activity_menu_navegacion">MainActivity</string>
+    <string name="title_activity_navegacion_menu">MainActivity</string>
+
+
+    <!-- Ajustes -->
+    <string name="SalirJuego">salir </string>
+
+    <!-- Menu Perfil-->
+    <string name="tab1">Perfil</string>
+    <string name="tab2">Mensajes</string>
+    <string name="tab3">Social</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    <string name="cardOperador" type="id">cardOperador</string>
+    <string name="cardClase" type="id">cardClase</string>
+    <string name="cardVariable" type="id">cardVariable</string>
+    <string name="cardControl" type="id">cardControl</string>
+    <string name="cardEvento" type="id">cardEvento</string>
+    <string name="cardMover" type="id">cardMover</string>
+</resources>

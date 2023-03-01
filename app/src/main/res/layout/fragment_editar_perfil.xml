@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_marginBottom="300dp"
+    tools:context=".ui.Dialogos.FragmentEditarPerfil">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+
+        <LinearLayout
+            android:background="#6077A3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="77dp"
+                    android:layout_toStartOf="@+id/salirEditarPerfil"
+                    android:gravity="center"
+                    android:minHeight="?actionBarSize"
+                    android:text="Edita tu perfil"
+                    android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                    android:textSize="25dp" />
+
+                <ImageView
+                    android:id="@+id/salirEditarPerfil"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="@dimen/appbar_padding"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/xbutton" />
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#96ACD9"
+                android:orientation="vertical"
+                >
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#96ACD9"
+        android:orientation="vertical"
+        >
+
+
+
+
+        <ImageView
+            android:id="@+id/imagenEditarAvatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewAvatars"
+            android:layout_width="250dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="100dp" />
+
+
+
+
+               <androidx.cardview.widget.CardView
+                   android:clickable="true"
+                   android:focusable="true"
+                   android:foreground="?android:attr/selectableItemBackground"
+                   xmlns:android="http://schemas.android.com/apk/res/android"
+                   android:layout_width="250dp"
+                   android:layout_height="80dp"
+                   android:backgroundTint="#69BCB6"
+                   app:cardUseCompatPadding="true"
+                   app:cardCornerRadius="10dp"
+                   android:elevation="2dp"
+                   app:contentPadding="5dp"
+                   xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                   <TextView
+                       android:id="@+id/nombreEditar"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_marginStart="20dp"
+                       android:gravity="center_vertical"
+                       android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                       android:text="Nombre" />
+                   <Button
+                       android:id="@+id/botonEditarNombre"
+                       android:text="editar"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+
+                       android:layout_marginRight="10dp"
+                       android:layout_gravity="end"
+                       android:layout_marginEnd="30dp"
+                       >
+                   </Button>
+               </androidx.cardview.widget.CardView>
+
+
+               <androidx.cardview.widget.CardView
+                   android:clickable="true"
+                   android:focusable="true"
+                   android:foreground="?android:attr/selectableItemBackground"
+                   xmlns:android="http://schemas.android.com/apk/res/android"
+                   android:layout_width="250dp"
+                   android:layout_height="80dp"
+                   android:backgroundTint="#69BCB6"
+                   app:cardUseCompatPadding="true"
+                   app:cardCornerRadius="10dp"
+                   android:elevation="2dp"
+                   app:contentPadding="5dp"
+                   xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                   <TextView
+                       android:id="@+id/universidadEditar"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_marginStart="20dp"
+                       android:gravity="center_vertical"
+                       android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                       android:text="Universidad" />
+                   <Button
+                       android:id="@+id/botonEditarUniversidad"
+                       android:text="editar"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="50dp"
+                       android:layout_gravity="end"
+                       android:layout_marginEnd="30dp"
+                       >
+                   </Button>
+               </androidx.cardview.widget.CardView>
+
+               <androidx.cardview.widget.CardView
+                   android:clickable="true"
+                   android:focusable="true"
+                   android:foreground="?android:attr/selectableItemBackground"
+                   xmlns:android="http://schemas.android.com/apk/res/android"
+                   android:layout_width="250dp"
+                   android:layout_height="80dp"
+                   android:backgroundTint="#69BCB6"
+                   app:cardUseCompatPadding="true"
+                   app:cardCornerRadius="10dp"
+                   android:elevation="2dp"
+                   app:contentPadding="5dp"
+                   xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                   <TextView
+                       android:id="@+id/semestreEditar"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_marginStart="20dp"
+                       android:gravity="center_vertical"
+                       android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                       android:text="Semestre" />
+                   <Button
+                       android:id="@+id/botonEditarSemestre"
+                       android:text="editar"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="50dp"
+                       android:layout_gravity="end"
+                       android:layout_marginEnd="30dp"
+                       >
+                   </Button>
+               </androidx.cardview.widget.CardView>
+
+           </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+
+       </FrameLayout>

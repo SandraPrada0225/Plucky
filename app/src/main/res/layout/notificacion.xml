@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#69BCB6"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="10dp"
+    android:elevation="2dp"
+    app:contentPadding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/imagenEmisorNotificacion"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/espada" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            >
+
+            <TextView
+                android:id="@+id/nombreEmisorNotificacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nombreJugador"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/notificacion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/imagenClanNotificacion"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/espada" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            >
+
+            <TextView
+                android:id="@+id/nombreClanNotificacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nombreJugador"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/textNotificacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/correoJugador"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <ImageView
+            android:id="@+id/aceptarNotificacionClan"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/appbar_padding"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/cheque" />
+
+
+        <ImageView
+            android:id="@+id/rechazarNotificacionClan"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/xbutton" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.online.DialogClan">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple_700"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:minHeight="?actionBarSize"
+                android:text="Clan"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:id="@+id/salirMostrarClan"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/appbar_padding"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/xbutton" />
+        </RelativeLayout>
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/primerfondo"
+            android:orientation="vertical">
+
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/idGridClan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="30dp"
+                android:background="#96ACD9"
+                android:padding="4dp"
+                app:columnCount="2"
+                app:rowCount="1">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imagenClan"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="end"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/perfil" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/nombreClan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/descripcionClan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/estadoClan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.gridlayout.widget.GridLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewIntegrantesClan"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:foregroundGravity="center_horizontal"
+                android:scrollbars="none" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </LinearLayout>
+
+</FrameLayout>

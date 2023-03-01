@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#69BCB6"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="10dp"
+    android:elevation="2dp"
+    app:contentPadding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/jugadores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imagenJugador"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:civ_circle_background_color="#E5D5B5" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="60dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nombreJugador"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nombreJugador"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/correoJugador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/correoJugador"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            app:layout_anchorGravity="end|top">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/espada" />
+
+            <TextView
+                android:id="@+id/nivelJugador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/nivelJugador"
+                android:textColor="#F205CB"
+                android:textSize="25sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.cardview.widget.CardView>
